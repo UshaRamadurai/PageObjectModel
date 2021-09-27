@@ -38,24 +38,6 @@ public class BaseClass {
 		return ReadExcel.readData(fileName);
 	}
 
-	@BeforeSuite
-	public void startReport() {
-		ExtentHtmlReporter reporter = new ExtentHtmlReporter("./reports/result.html");
-		reporter.setAppendExisting(true);
-		extent = new ExtentReports();
-		extent.attachReporter(reporter);
-	}
-	
-	@AfterSuite
-	public void stopReport() {
-		extent.flush();
-	}
-	
-	/*
-	 * @BeforeClass public void setupTestCaseDetails() { test =
-	 * extent.createTest(testName,testDescription);
-	 * test.assignCategory(testCategory); test.assignAuthor(testAuthor); }
-	 */
 	@BeforeMethod
 	public void preCondition() throws IOException {
 
