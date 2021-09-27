@@ -10,11 +10,6 @@ import pages.LoginPage;
 public class CreateLead extends BaseClass{
 	@BeforeTest
 	public void setFileName() {
-		/*
-		 * testName="CreateLead"; testDescription =
-		 * "Create lead from leaptaps application"; testAuthor = "Usha";
-		 * testCategory="Smoke";
-		 */
 		fileName = "Sheet1";
 		}
 	
